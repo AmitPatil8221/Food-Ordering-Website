@@ -1,0 +1,256 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    /* background-color: black; */
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+/* Navigation Bar : Logo and image */
+#logo {
+    margin: -24px 0px;
+}
+
+#logo img {
+    margin: 39px 35px;
+    height: 45px;
+    border: 2px solid yellow;
+    border-radius: 5px;
+}
+
+/* Navigation Bar : List Styling */
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+#navbar ul li a {
+    color: rgb(231, 225, 225);
+    display: block;
+    padding: 3px 35px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+#navbar ul li a:hover {
+    color: blue;
+    background-color: rgb(230, 229, 214);
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 760px;
+}
+
+#home::before {
+    content: "";
+    background-image: url("/Food Ordering Web/images/1st background img.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 6.5;
+}
+
+#home h1 {
+    color: aliceblue;
+    text-align: center;
+}
+
+#home p {
+    color: aliceblue;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* Services Section */
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid yellow;
+    padding: 35px;
+    margin: 5px 5px;
+    border-radius: 90px;
+    background-color: darkseagreen;
+}
+
+#services .box img {
+    height: 160px;
+    margin: auto;
+    display: block;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    /* mix-blend-mode: color-burn; */
+}
+
+#services .box p {
+    font-size: 1rem;
+}
+
+/* Client Section */
+#client-section {
+    height: 285px;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background-image: url("/Food Ordering Web/images/2nd-background-image.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item {
+    padding: 40px;
+}
+
+.client-item img {
+    height: 100px;
+    border-radius: 30px;
+    border: 3px solid lightcyan;
+}
+
+/* Contact section */
+#contact {
+    position: relative;
+    height: 537px;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 6.5;
+    background-image: url("/Food Ordering Web/images/contact.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 23px;
+    font-size: 0.8rem;
+}
+
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 23px;
+    font-size: 0.8rem;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+}
+
+#contact-box .form-group .submit {
+    align-items: center;
+    padding: 8px 20px;
+    border: 2px solid cornflowerblue;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    margin: auto;
+    margin-top: 12px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: block;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    padding: 7px 20px;
+    text-align: center;
+}
+
+/* Utility Classes */
+.h-primary {
+    font-size: 3.8rem;
+    padding: 12px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.h-secondary {
+    font-size: 1.5rem;
+    padding: 12px;
+    text-align: center;
+}
+
+.btn {
+    padding: 8px 20px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 25px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin: 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
